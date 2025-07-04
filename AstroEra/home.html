@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AstroEra - Your Gateway to the Cosmos</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-indigo-100 via-purple-100 to-pink-100 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md py-4 px-6 flex justify-between items-center sticky top-0 z-50">
+    <h1 class="text-2xl font-bold text-purple-700">🔮 AstroEra</h1>
+    <ul class="flex space-x-6 text-sm font-semibold text-gray-700">
+      <li><a href="home.html" class="hover:text-purple-600 transition">Home</a></li>
+      <li><a href="Horoscope.html" class="hover:text-purple-600 transition">Horoscope</a></li>
+      <li><a href="Consultation.html" class="hover:text-purple-600 transition">Consultation</a></li>
+      <li><a href="Birth Chart.html" class="hover:text-purple-600 transition">Birth Chart</a></li>
+      <li><a href="Contact.html" class="hover:text-purple-600 transition">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="text-center py-20" data-aos="fade-up">
+    <h1 class="text-5xl font-extrabold mb-4 text-purple-800">Welcome to AstroEra</h1>
+    <p class="text-lg max-w-xl mx-auto mb-6">Explore the mystical world of astrology with daily insights, personal guidance, and your own cosmic blueprint.</p>
+    <a href="Consultation.html" class="bg-purple-600 text-white px-6 py-3 rounded-full font-medium shadow hover:bg-purple-700 transition transform hover:scale-105">Get Started</a>
+  </header>
+
+  <!-- Main Features -->
+  <section class="grid grid-cols-1 md:grid-cols-3 gap-6 p-6 max-w-6xl mx-auto">
+    <!-- Horoscope -->
+    <div class="rounded-2xl shadow-xl bg-white p-6 text-center transform transition hover:scale-105" data-aos="zoom-in">
+      <div class="text-purple-600 mb-4 text-3xl animate-bounce">⭐</div>
+      <h2 class="text-xl font-semibold mb-2">Daily Horoscope</h2>
+      <p class="mb-4">Personalized horoscopes based on your sign to guide your day.</p>
+      <a href="Horoscope.html" class="inline-block bg-purple-600 text-white px-4 py-2 rounded-full hover:bg-purple-700 transition">View Horoscope</a>
+    </div>
+
+    <!-- Consultation -->
+    <div class="rounded-2xl shadow-xl bg-white p-6 text-center transform transition hover:scale-105" data-aos="zoom-in" data-aos-delay="100">
+      <div class="text-pink-600 mb-4 text-3xl animate-pulse">💬</div>
+      <h2 class="text-xl font-semibold mb-2">Live Consultation</h2>
+      <p class="mb-4">Chat or video call with top astrologers anytime, anywhere.</p>
+      <a href="Consultation.html" class="inline-block border border-pink-600 text-pink-600 px-4 py-2 rounded-full hover:bg-pink-50 transition">Start Consultation</a>
+    </div>
+
+    <!-- Birth Chart -->
+    <div class="rounded-2xl shadow-xl bg-white p-6 text-center transform transition hover:scale-105" data-aos="zoom-in" data-aos-delay="200">
+      <div class="text-indigo-600 mb-4 text-3xl animate-spin-slow">📅</div>
+      <h2 class="text-xl font-semibold mb-2">Birth Chart Analysis</h2>
+      <p class="mb-4">Discover insights about your personality, love, and destiny.</p>
+      <a href="Birth Chart.html" class="inline-block text-indigo-600 underline hover:text-indigo-800 transition">Generate Chart</a>
+    </div>
+  </section>
+
+  <!-- Why Choose AstroEra -->
+  <section class="py-16 px-6 max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-10" data-aos="fade-up">Why Choose AstroEra?</h2>
+    <div class="grid md:grid-cols-2 gap-6 text-left">
+      <div class="bg-white shadow rounded-xl p-6" data-aos="fade-right">
+        <h3 class="font-semibold text-lg mb-2">🔐 100% Confidential</h3>
+        <p>Your sessions and personal information are completely private and secure.</p>
+      </div>
+      <div class="bg-white shadow rounded-xl p-6" data-aos="fade-left">
+        <h3 class="font-semibold text-lg mb-2">📲 24/7 Availability</h3>
+        <p>Get astrological guidance anytime, even on weekends and holidays.</p>
+      </div>
+      <div class="bg-white shadow rounded-xl p-6" data-aos="fade-right">
+        <h3 class="font-semibold text-lg mb-2">🌙 Vedic & Western Astrology</h3>
+        <p>Choose your preferred astrology system — both are supported by experts.</p>
+      </div>
+      <div class="bg-white shadow rounded-xl p-6" data-aos="fade-left">
+        <h3 class="font-semibold text-lg mb-2">⭐ Verified Experts</h3>
+        <p>Only astrologers with real experience and client success are featured.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-12 bg-white text-center" data-aos="fade-up">
+    <h2 class="text-2xl font-bold mb-4">Contact Us</h2>
+    <p class="mb-2">📧 Email: <a href="mailto:sk6162906@gmail.com" class="text-purple-600 underline">sk6162906@gmail.com</a></p>
+    <p>📍 Location: India (Online services available worldwide)</p>
+    <p class="mt-4">
+      <a href="Contact.html" class="inline-block mt-2 bg-purple-100 text-purple-700 px-4 py-2 rounded-full hover:bg-purple-200 transition">
+        More Contact Options
+      </a>
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-8 text-sm text-gray-600">
+    © 2025 AstroEra. All rights reserved. <br>
+    Developed by <strong>Saurav Raj</strong> | <a href="mailto:sk6162906@gmail.com" class="underline">sk6162906@gmail.com</a>
+  </footer>
+
+  <!-- Animation On Scroll Init -->
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+  </script>
+
+  <!-- Optional custom animation class -->
+  <style>
+    .animate-spin-slow {
+      animation: spin 6s linear infinite;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Today's Horoscope - AstroEra</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-br from-indigo-100 via-purple-100 to-pink-100 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md py-4 px-6 flex justify-between items-center">
+    <h1 class="text-2xl font-bold text-purple-700">🔮 AstroEra</h1>
+    <ul class="flex space-x-6 text-sm font-semibold text-gray-700">
+      <li><a href="home.html" class="hover:text-purple-600">Home</a></li>
+      <li><a href="Horoscope.html" class="hover:text-purple-600">Horoscope</a></li> 
+      <li><a href="Consultation.html" class="hover:text-purple-600">Consultation</a></li> 
+      <li><a href="Birth Chart.html" class="text-purple-600 font-bold">Birth Chart</a></li> 
+      <li><a href="Contact.html" class="hover:text-purple-600">Contact</a></li> 
+    </ul>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header class="text-center py-12">
+    <h2 class="text-4xl font-bold mb-2">Today's Horoscope</h2>
+    <p class="text-gray-600">Choose your zodiac sign and see what the stars have in store for you ✨</p>
+    <p class="mt-2 text-sm text-gray-500">Date: <span id="current-date"></span></p>
+  </header>
+
+  <!-- Zodiac Grid -->
+  <section class="max-w-5xl mx-auto px-6 py-8 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+    <!-- Example sign, repeat for each zodiac -->
+    <div class="bg-white p-4 rounded-xl text-center shadow hover:shadow-lg transition cursor-pointer">
+      <h3 class="text-xl font-semibold text-purple-700 mb-1">♈ Aries</h3>
+      <p class="text-sm text-gray-600">March 21 - April 19</p>
+      <button class="mt-3 text-sm text-purple-600 underline">Read Horoscope</button>
+    </div>
+    <div class="bg-white p-4 rounded-xl text-center shadow hover:shadow-lg transition cursor-pointer">
+      <h3 class="text-xl font-semibold text-purple-700 mb-1">♉ Taurus</h3>
+      <p class="text-sm text-gray-600">April 20 - May 20</p>
+      <button class="mt-3 text-sm text-purple-600 underline">Read Horoscope</button>
+    </div>
+    <div class="bg-white p-4 rounded-xl text-center shadow hover:shadow-lg transition cursor-pointer">
+      <h3 class="text-xl font-semibold text-purple-700 mb-1">♊ Gemini</h3>
+      <p class="text-sm text-gray-600">May 21 - June 20</p>
+      <button class="mt-3 text-sm text-purple-600 underline">Read Horoscope</button>
+    </div>
+    <div class="bg-white p-4 rounded-xl text-center shadow hover:shadow-lg transition cursor-pointer">
+      <h3 class="text-xl font-semibold text-purple-700 mb-1">♋ Cancer</h3>
+      <p class="text-sm text-gray-600">June 21 - July 22</p>
+      <button class="mt-3 text-sm text-purple-600 underline">Read Horoscope</button>
+    </div>
+    <div class="bg-white p-4 rounded-xl text-center shadow hover:shadow-lg transition cursor-pointer">
+      <h3 class="text-xl font-semibold text-purple-700 mb-1">♌ Leo</h3>
+      <p class="text-sm text-gray-600">July 23 - August 22</p>
+      <button class="mt-3 text-sm text-purple-600 underline">Read Horoscope</button>
+    </div>
+    <div class="bg-white p-4 rounded-xl text-center shadow hover:shadow-lg transition cursor-pointer">
+      <h3 class="text-xl font-semibold text-purple-700 mb-1">♍ Virgo</h3>
+      <p class="text-sm text-gray-600">August 23 - Sept 22</p>
+      <button class="mt-3 text-sm text-purple-600 underline">Read Horoscope</button>
+    </div>
+    <div class="bg-white p-4 rounded-xl text-center shadow hover:shadow-lg transition cursor-pointer">
+      <h3 class="text-xl font-semibold text-purple-700 mb-1">♎ Libra</h3>
+      <p class="text-sm text-gray-600">Sept 23 - Oct 22</p>
+      <button class="mt-3 text-sm text-purple-600 underline">Read Horoscope</button>
+    </div>
+    <div class="bg-white p-4 rounded-xl text-center shadow hover:shadow-lg transition cursor-pointer">
+      <h3 class="text-xl font-semibold text-purple-700 mb-1">♏ Scorpio</h3>
+      <p class="text-sm text-gray-600">Oct 23 - Nov 21</p>
+      <button class="mt-3 text-sm text-purple-600 underline">Read Horoscope</button>
+    </div>
+    <div class="bg-white p-4 rounded-xl text-center shadow hover:shadow-lg transition cursor-pointer">
+      <h3 class="text-xl font-semibold text-purple-700 mb-1">♐ Sagittarius</h3>
+      <p class="text-sm text-gray-600">Nov 22 - Dec 21</p>
+      <button class="mt-3 text-sm text-purple-600 underline">Read Horoscope</button>
+    </div>
+    <div class="bg-white p-4 rounded-xl text-center shadow hover:shadow-lg transition cursor-pointer">
+      <h3 class="text-xl font-semibold text-purple-700 mb-1">♑ Capricorn</h3>
+      <p class="text-sm text-gray-600">Dec 22 - Jan 19</p>
+      <button class="mt-3 text-sm text-purple-600 underline">Read Horoscope</button>
+    </div>
+    <div class="bg-white p-4 rounded-xl text-center shadow hover:shadow-lg transition cursor-pointer">
+      <h3 class="text-xl font-semibold text-purple-700 mb-1">♒ Aquarius</h3>
+      <p class="text-sm text-gray-600">Jan 20 - Feb 18</p>
+      <button class="mt-3 text-sm text-purple-600 underline">Read Horoscope</button>
+    </div>
+    <div class="bg-white p-4 rounded-xl text-center shadow hover:shadow-lg transition cursor-pointer">
+      <h3 class="text-xl font-semibold text-purple-700 mb-1">♓ Pisces</h3>
+      <p class="text-sm text-gray-600">Feb 19 - Mar 20</p>
+      <button class="mt-3 text-sm text-purple-600 underline">Read Horoscope</button>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="text-center py-10">
+    <p class="mb-4 text-lg">Need more guidance based on your stars?</p>
+    <a href="#" class="bg-pink-600 text-white px-6 py-3 rounded-full shadow hover:bg-pink-700 transition">
+      Talk to an Astrologer
+    </a>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-12 bg-white text-center">
+    <h2 class="text-2xl font-bold mb-4">Contact Us</h2>
+    <p class="mb-2">📧 Email: <a href="mailto:sk6162906@gmail.com" class="text-purple-600 underline">sk6162906@gmail.com</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 text-sm text-gray-600">
+    © 2025 AstroEra. All rights reserved. <br />
+    Developed by <strong>Saurav Raj</strong> | <a href="mailto:sk6162906@gmail.com" class="underline">sk6162906@gmail.com</a>
+  </footer>
+
+  <!-- Script to show current date -->
+  <script>
+    document.getElementById('current-date').textContent = new Date().toLocaleDateString();
+  </script>
+
+</body>
+</html>

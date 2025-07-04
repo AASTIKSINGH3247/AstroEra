@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Consultation - AstroEra</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-indigo-100 via-purple-100 to-pink-100 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md py-4 px-6 flex justify-between items-center sticky top-0 z-50">
+    <h1 class="text-2xl font-bold text-purple-700 animate-pulse">🔮 AstroEra</h1>
+    <ul class="flex space-x-6 text-sm font-semibold text-gray-700">
+    <li><a href="home.html" class="hover:text-purple-600">Home</a></li>
+      <li><a href="Horoscope.html" class="hover:text-purple-600">Horoscope</a></li> 
+      <li><a href="Consultation.html" class="hover:text-purple-600">Consultation</a></li> 
+      <li><a href="Birth Chart.html" class="text-purple-600 font-bold">Birth Chart</a></li> 
+      <li><a href="Contact.html" class="hover:text-purple-600">Contact</a></li> 
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="text-center py-16 px-6" data-aos="fade-down">
+    <h2 class="text-4xl font-bold mb-3">Speak to Trusted Astrologers</h2>
+    <p class="text-lg text-gray-600 max-w-2xl mx-auto">Choose from our network of certified astrologers for accurate guidance in love, career, marriage, health & more ✨</p>
+  </section>
+
+  <!-- Astrologer Grid -->
+  <section class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mb-20">
+    <!-- Astrologer Cards (30 Total) -->
+    
+    <!-- Repeat 30 astrologer cards dynamically -->
+    <!-- For simplicity and brevity, generating cards in a loop -->
+    <!-- In production, replace with real data -->
+    
+    <!-- START CARDS -->
+    <script>
+      const names = ["Rajeev Sharma", "Meena Devi", "Shyam Verma", "Anjali Joshi", "Rohit Das", "Kavita Singh", "Naveen Chandra", "Priya Mehra", "Arun Kumar", "Sonal Gupta", "Dinesh Rana", "Alka Jain", "Amit Trivedi", "Nisha Pandey", "Yash Thakur", "Poonam Rani", "Ravi Saxena", "Swati Sharma", "Deepak Joshi", "Neha Verma", "Suresh Yadav", "Ritika Saini", "Manoj Tripathi", "Isha Malhotra", "Harshita Kaur", "Karan Kapoor", "Tanya Bhatia", "Vikram Mehta", "Divya Roy", "Sanjay Sinha"];
+      const specialties = ["Vedic", "Tarot", "Palmistry", "Numerology", "Career", "Marriage", "Love", "Health", "Spiritual", "Life Path"];
+      for (let i = 0; i < 30; i++) {
+        const name = names[i % names.length];
+        const specialty = specialties[i % specialties.length];
+        const colors = ["purple", "pink", "indigo", "green", "red", "blue", "yellow"];
+        const color = colors[i % colors.length];
+        document.write(`
+          <div class="bg-white p-6 rounded-2xl shadow-xl text-center hover:shadow-2xl transition transform hover:-translate-y-1" data-aos="zoom-in" data-aos-delay="${(i % 5) * 100}">
+            <img src="https://i.pravatar.cc/150?img=${i + 10}" alt="Astrologer" class="w-24 h-24 mx-auto rounded-full mb-4">
+            <h3 class="text-xl font-semibold text-${color}-700">${name}</h3>
+            <p class="text-sm text-gray-600">${specialty} | Love | ${specialty}</p>
+            <div class="text-yellow-400 mt-2 mb-4">${"★".repeat(5 - (i % 2)) + (i % 2 ? "☆" : "")}</div>
+            <div class="flex justify-center flex-wrap gap-2">
+              <a href="#" class="bg-${color}-600 text-white px-4 py-2 rounded-full text-sm hover:bg-${color}-700 transition">Chat</a>
+              <a href="#" class="border border-${color}-600 text-${color}-600 px-4 py-2 rounded-full text-sm hover:bg-${color}-100 transition">Video Call</a>
+              <a href="tel:+9112345678${i}" class="border border-${color}-600 text-${color}-600 px-4 py-2 rounded-full text-sm hover:bg-${color}-100 transition">Call</a>
+              <a href="https://wa.me/9112345678${i}" class="border border-green-500 text-green-600 px-4 py-2 rounded-full text-sm hover:bg-green-100 transition">WhatsApp</a>
+            </div>
+          </div>
+        `);
+      }
+    </script>
+    <!-- END CARDS -->
+  </section>
+
+  <!-- Call to Action -->
+  <section class="text-center py-12 bg-white" data-aos="fade-up">
+    <h2 class="text-2xl font-bold mb-2">Not Sure Who to Choose?</h2>
+    <p class="mb-4 text-gray-600">Let us suggest the right astrologer based on your query.</p>
+    <a href="#" class="bg-purple-700 text-white px-6 py-3 rounded-full shadow hover:bg-purple-800 transition transform hover:scale-105">Get Recommendation</a>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="text-center py-12">
+    <h2 class="text-2xl font-bold mb-3">Contact Us</h2>
+    <p class="mb-1">📧 Email: <a href="mailto:sk6162906@gmail.com" class="text-purple-600 underline">sk6162906@gmail.com</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 text-sm text-gray-600">
+    © 2025 AstroEra. All rights reserved. <br />
+    Developed by <strong>Saurav Raj</strong> | <a href="mailto:sk6162906@gmail.com" class="underline">sk6162906@gmail.com</a>
+  </footer>
+
+  <!-- AOS Animation -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init({ once: true });</script>
+</body>
+</html>

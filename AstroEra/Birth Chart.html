@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Birth Chart - AstroEra</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-yellow-50 via-pink-50 to-purple-100 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md py-4 px-6 flex justify-between items-center sticky top-0 z-50">
+    <h1 class="text-2xl font-bold text-purple-700 animate-pulse">🔮 AstroEra</h1>
+    <ul class="flex space-x-6 text-sm font-semibold text-gray-700">
+     <li><a href="home.html" class="hover:text-purple-600">Home</a></li>
+      <li><a href="Horoscope.html" class="hover:text-purple-600">Horoscope</a></li> 
+      <li><a href="Consultation.html" class="hover:text-purple-600">Consultation</a></li> 
+      <li><a href="Birth Chart.html" class="text-purple-600 font-bold">Birth Chart</a></li> 
+    <li><a href="Contact.html" class="hover:text-purple-600">Contact</a></li> 
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="text-center py-16 px-6" data-aos="fade-down">
+    <h2 class="text-4xl font-bold mb-3">Discover Your Birth Chart</h2>
+    <p class="text-lg text-gray-600 max-w-2xl mx-auto">Understand your personality, life path, and destiny with a detailed astrological birth chart ✨</p>
+  </section>
+
+  <!-- Birth Chart Form -->
+  <section class="max-w-3xl mx-auto px-6 py-10 bg-white shadow-xl rounded-2xl" data-aos="zoom-in">
+    <h3 class="text-2xl font-semibold text-center text-purple-700 mb-6">Generate Your Birth Chart</h3>
+    <form class="space-y-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <input type="text" placeholder="Full Name" class="border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-purple-400" required />
+        <input type="email" placeholder="Email Address" class="border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-purple-400" required />
+        <input type="date" placeholder="Date of Birth" class="border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-purple-400" required />
+        <input type="time" placeholder="Time of Birth" class="border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-purple-400" required />
+        <input type="text" placeholder="Place of Birth" class="border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-purple-400 md:col-span-2" required />
+      </div>
+      <div class="text-center">
+        <button type="submit" class="bg-purple-600 text-white px-6 py-3 rounded-full shadow hover:bg-purple-700 transition transform hover:scale-105">Generate Chart</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="text-center py-12 bg-white" data-aos="fade-up">
+    <h2 class="text-2xl font-bold mb-2">Need Expert Guidance?</h2>
+    <p class="mb-4 text-gray-600">Consult with our astrologers for a detailed interpretation of your chart.</p>
+    <a href="consultation.html" class="bg-purple-700 text-white px-6 py-3 rounded-full shadow hover:bg-purple-800 transition transform hover:scale-105">Talk to an Astrologer</a>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="text-center py-12">
+    <h2 class="text-2xl font-bold mb-3">Contact Us</h2>
+    <p class="mb-1">📧 Email: <a href="mailto:sk6162906@gmail.com" class="text-purple-600 underline">sk6162906@gmail.com</a></p>
+    <p class="text-lg mt-4 font-semibold">Saurav Raj</p>
+    <div class="flex justify-center space-x-6 mt-4">
+      <a href="https://www.facebook.com/" target="_blank" title="Facebook">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" class="w-6 h-6">
+      </a>
+      <a href="https://www.instagram.com/" target="_blank" title="Instagram">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram" class="w-6 h-6">
+      </a>
+      <a href="https://github.com/" target="_blank" title="GitHub">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" class="w-6 h-6">
+      </a>
+      <a href="https://twitter.com/" target="_blank" title="Twitter">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" class="w-6 h-6">
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 text-sm text-gray-600">
+    © 2025 AstroEra. All rights reserved. <br />
+    Developed by <strong>Saurav Raj</strong> | <a href="mailto:sk6162906@gmail.com" class="underline">sk6162906@gmail.com</a>
+  </footer>
+
+  <!-- AOS Animation -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init({ once: true });</script>
+</body>
+</html>
